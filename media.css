@@ -1,0 +1,40 @@
+@media screen and (max-width:970px){
+    .navlinks a{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:900px){
+    .hamburger{
+        display: contents;
+    }
+    .hamburger a{
+        padding-right: 2rem;
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        padding-bottom: 1.6rem;
+        color: #660494;
+    }
+    .hamburger a:hover{
+        color:#FF6968    ;
+    }
+    .navlinks{
+        display: none;
+    }
+}
+@media screen and (max-width:700px){
+    header h1{
+        
+        font-size: 4.8rem;
+    }
+}
+@media screen and (max-width:600px){
+    header h1{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width:400px ){
+    header h1 {
+        font-size: 3.5rem;
+    }
+}
