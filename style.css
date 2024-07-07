@@ -314,7 +314,7 @@ header a{
 }
 .second h2{
 
-    top: 470%;
+    top: 480%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -324,7 +324,7 @@ header a{
     mix-blend-mode: overlay;
 }
 .second h1 {
-    top: 490%;
+    top: 505%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -338,11 +338,12 @@ header a{
 
 
 .second h3{
-    top: 505%;
+    top: 520%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     font-size: 40px;
+   
 }
 .second h3{
     color: rgb(255, 255, 255);
