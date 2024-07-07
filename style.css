@@ -278,12 +278,12 @@ header a{
     object-fit: cover;
 }
 
-#page5{
+/* #page5{
     height: 100vh;
     width: 100%;
     background-color: #000000;
     
-}
+} */
 
 #move{
     background-color: #D8FF04;
@@ -312,9 +312,19 @@ header a{
 #move img{
     height: 3.2vw;
 }
+.second h2{
 
+    top: 470%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    text-transform: uppercase;
+    text-shadow: 0 10px 20px rgba (0,0,0,1);
+    mix-blend-mode: overlay;
+}
 .second h1 {
-    top: 408%;
+    top: 490%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -325,20 +335,10 @@ header a{
     mix-blend-mode: overlay;
     
 }
-.second h2{
 
-    top: 390%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    font-size: 80px;
-    text-transform: uppercase;
-    text-shadow: 0 10px 20px rgba (0,0,0,1);
-    mix-blend-mode: overlay;
-}
 
 .second h3{
-    top: 418%;
+    top: 505%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
