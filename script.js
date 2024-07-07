@@ -1,45 +1,5 @@
-function locomotiveAnimation() {
-  gsap.registerPlugin(ScrollTrigger);
-
-  const locoScroll = new LocomotiveScroll({
-      el: document.querySelector("#main"),
-      smooth: true,
-
-      // for tablet smooth
-      tablet: { smooth: true },
-
-      // for mobile
-      smartphone: { smooth: true }
-  });
-  locoScroll.on("scroll", ScrollTrigger.update);
-
-  ScrollTrigger.scrollerProxy("#main", {
-      scrollTop(value) {
-          return arguments.length
-              ? locoScroll.scrollTo(value, 0, 0)
-              : locoScroll.scroll.instance.scroll.y;
-      },
-      getBoundingClientRect() {
-          return {
-              top: 0,
-              left: 0,
-              width: window.innerWidth,
-              height: window.innerHeight
-          };
-      }
-
-  });
-
-  ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-
-  ScrollTrigger.refresh();
-
-}
-
-
-
-
 var tl = gsap.timeline()
+
 tl.from("nav",{
     y:900,
    delay:.4,
@@ -116,8 +76,9 @@ function page3and4Animations() {
           gsap.to("#moving-image", {
               left: `${dets.x - elementContainer.getBoundingClientRect().x}`,
               top: `${dets.y - elementContainer.getBoundingClientRect().y}`,
-              duration: 3,
+              duration:3,
               ease: "power1.out"
+              
           })
 
       })
@@ -154,24 +115,22 @@ function marqueAnimation() {
 }
 
 
-
-// locomotiveAnimation()
-
-
 page3and4Animations()
+
+marqueAnimation()
 
 marqueAnimation()
 var roti = 0
 document.addEventListener("wheel",function(dets){
-  if(dets.deltaY>0){
-      roti += 10
-      gsap.to("#bottomright svg",{
-          transform:`translate(-50%,-50%) rotate(${roti}deg)`
-      })
-  }else{
-      roti -= 10
-      gsap.to("#bottomright svg",{
-          transform:`translate(-50%,-50%) rotate(${roti}deg)`
-      })
-  }
+    if(dets.deltaY>0){
+        roti += 10
+        gsap.to("#bottomright svg",{
+            transform:`translate(-50%,-50%) rotate(${roti}deg)`
+        })
+    }else{
+        roti -= 10
+        gsap.to("#bottomright svg",{
+            transform:`translate(-50%,-50%) rotate(${roti}deg)`
+        })
+    }
 })

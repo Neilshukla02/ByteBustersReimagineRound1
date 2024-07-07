@@ -28,7 +28,7 @@ nav{
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
    
     
 }
@@ -239,10 +239,11 @@ header a{
     /* background-color: red; */
 }
 #page4>h1{
-    font-size: 7.5vw;
+    font-size: 6.5vw;
     line-height: 7.2vw;
     text-align: center;
     font-weight:500;
+    transform: translate(-5%,-20%);
 }
 #element-container{
     margin-top: 7vw;
@@ -353,7 +354,7 @@ header a{
     border: 5px solid #2c152e;
     padding: 12px 32px ;
 }
-.second h2:hover{
+.second h3:hover{
     background-color: rgb(0, 0, 0);
     color:#962a84 ;
     border: 9px solid black;
